@@ -2,7 +2,16 @@
 ---
 
 @import '_variables';
+@import 'type/_fonts';
+@import 'type/_type';
+@import 'ui/_index';
+@import '_helpers/_v-center';
 
 html{
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: $sans;
+  color: $blue;
+}
+
+body{
+  margin: 0;
 }

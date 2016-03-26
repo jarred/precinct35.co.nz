@@ -1,0 +1,33 @@
+.index-block{
+  width: 50vw;
+  height: 50vh;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.index-online,
+.index-instagram{
+  background-color: $blue;
+}
+
+.column{
+  width: 50%;
+  float: left;
+  display: block;
+}
+
+.index-block-content{
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+
+.index-instagram{
+  color: $white;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 200;
+}
