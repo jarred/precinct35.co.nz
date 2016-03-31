@@ -4,17 +4,31 @@
   float: left;
   text-align: center;
   position: relative;
+  @include breakpoint(mobile){
+    width: 100%;
+    height: 100vh;
+  }
 }
 
-.index-online,
-.index-instagram{
+.index-online{
   background-color: $blue;
+}
+.index-instagram{
+  background-color: $grey;
 }
 
 .column{
   width: 50%;
   float: left;
   display: block;
+  text-align: left;
+  @include breakpoint(mobile){
+    float: none;
+    width: calc(100% - 40px);
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
 }
 
 .index-block-content{
@@ -30,4 +44,63 @@
   font-size: 20px;
   line-height: 1.25;
   font-weight: 200;
+}
+
+.index-hours{
+
+}
+
+.index-precinct-content{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  a{
+    color: $blue;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    &::after{
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      height: 1px;
+      bottom: 2px;
+      background-color: $grey;
+      content: " ";
+    }
+    &:hover{
+      color: $grey;
+      &::after{
+        background-color: #FFF;
+      }
+    }
+  }
+}
+
+.index .precinct-logo{
+  margin-bottom: 40px;
+}
+
+.index-hours-days{
+  @include smallCaps;
+  display: inline-block;
+  width: 110px;
+  text-align: left;
+  color: $grey;
+}
+.index-hours-times{
+  display: inline-block;
+  width: 106px;
+  text-align: right;
+}
+
+.index-hours-dash{
+  display: inline-block;
+  height: 1px;
+  width: 10px;
+  background-color: $grey;
+  vertical-align: middle;
+  margin-left: 1px;
+  margin-right: 1px;
 }
