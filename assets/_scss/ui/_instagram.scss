@@ -1,0 +1,29 @@
+.instagram{
+
+}
+
+.instagram-image{
+  $margin: 15%;
+  position: absolute;
+  left: $margin;
+  right: $margin;
+  top: $margin;
+  bottom: $margin;
+  background-position: center center;
+  background-size: contain;
+  display: none;
+  background-repeat: no-repeat;
+}
+
+.instagram-text{
+  @include smallSans;
+  text-decoration: none;
+  color: $grey;
+  font-weight: 400;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 8%;
+}

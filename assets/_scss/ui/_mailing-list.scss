@@ -1,0 +1,35 @@
+.mailing-list{
+
+}
+.mailing_list-form{
+  left: 20%;
+  right: 20%;
+  text-align: center;
+}
+
+.mailing_list-email{
+  display: block;
+  width: 100%;
+  border: 0;
+  height: 35px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  text-align: center;
+  color: $blue;
+  @include smallSans;
+}
+
+.mailing_list-submit{
+  border: 0;
+  @include smallCaps;
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: $blue;
+  color: $white;
+  cursor: default;
+  &:hover{
+    background-color: $white;
+    color: $grey;
+  }
+}
