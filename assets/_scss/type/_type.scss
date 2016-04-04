@@ -3,6 +3,11 @@
   font-size: 18px !important;
 }
 
+@mixin largeSans{
+  font-family: $sans;
+  font-size: 64px;
+}
+
 @mixin smallSerif{
   font-size: 18px !important;
   font-family: 'Farnham-Medium', Serif !important;

@@ -1,12 +1,18 @@
 .index-block{
-  width: 50vw;
-  height: 50vh;
+  width: 33.3333333333%;
+  height: 0;
+  padding-bottom: 33.333333333%;
   float: left;
   text-align: center;
   position: relative;
+  @include breakpoint(portrait){
+    width: 50%;
+    padding-bottom: 50%;
+  }
   @include breakpoint(mobile){
     width: 100%;
     height: 100vh;
+    padding-bottom: 0;
   }
 }
 
@@ -18,17 +24,10 @@
 }
 
 .column{
-  width: 50%;
-  float: left;
-  display: block;
-  text-align: left;
-  @media (max-width: 1280px){
-    float: none;
-    width: calc(100% - 40px);
-    margin: 20px;
-    margin-bottom: 40px;
-    text-align: center;
-  }
+  width: calc(100% - 40px);
+  margin: 20px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .index-block-content{
@@ -48,6 +47,16 @@
 
 .index-hours{
 
+}
+
+.index-online{
+  width: 66.666666666%;
+  @include breakpoint(portrait){
+    width: 50%;
+  }
+  @include breakpoint(mobile){
+    width: 100%;
+  }
 }
 
 .index-precinct-content{
@@ -103,4 +112,20 @@
   vertical-align: middle;
   margin-left: 1px;
   margin-right: 1px;
+}
+
+.precinct-symbol{
+  position: absolute;
+  right: 15%;
+  bottom: -50px;
+  z-index: 99999;;
+}
+
+.index-online-text{
+  @include largeSans;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: $white;
+  display: block;
 }

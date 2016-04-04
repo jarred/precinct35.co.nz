@@ -75,7 +75,7 @@ export default React.createClass({
     }
   },
   render(){
-    return <div className="index-block index-instagram">
+    return <div className="instagram">
       {this.renderPreloader()}
       {this.state.photos.map((photo) => this.renderPhoto(photo))}
       {this.renderText()}
