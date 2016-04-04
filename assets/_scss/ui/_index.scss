@@ -1,12 +1,12 @@
 .index-block{
   width: 33.3333333333%;
-  height: 0;
-  padding-bottom: 33.333333333%;
+  height: 50vh;
   float: left;
   text-align: center;
   position: relative;
   @include breakpoint(portrait){
     width: 50%;
+    height: 0;
     padding-bottom: 50%;
   }
   @include breakpoint(mobile){
@@ -131,4 +131,18 @@
   right: 0;
   color: $white;
   display: block;
+  z-index: 99999;
+}
+
+.index-online-image{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url('/assets/img/prak-bg.gif');
+  background-position: center center;
+  background-size: cover;
+  opacity: .2;
+  display: none;
 }

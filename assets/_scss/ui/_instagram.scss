@@ -11,8 +11,13 @@
   bottom: $margin;
   background-position: center center;
   background-size: contain;
-  display: none;
   background-repeat: no-repeat;
+  opacity: 0;
+  @include transition(opacity .1s ease-in);
+}
+
+.instagram-image--active{
+  opacity: 1;
 }
 
 .instagram-text{

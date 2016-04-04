@@ -55,13 +55,18 @@ export default React.createClass({
     }
   },
   renderPhoto(photo){
+    var imageActive = false;
+    if(this.state.photos.indexOf(photo) == this.state.activePhotoIndex){
+      imageActive = true;
+    }
+    var classes = ClassSet({
+      'instagram-image': true,
+      'instagram-image--active': imageActive
+    })
     var style = {
       backgroundImage: 'url(' + photo.images.standard_resolution.url + ')'
     };
-    if(this.state.photos.indexOf(photo) == this.state.activePhotoIndex){
-      style.display = 'block';
-    }
-    return <div className="instagram-image" key={photo.id} style={style}>
+    return <div className={classes} key={photo.id} style={style}>
 
     </div>
   },
