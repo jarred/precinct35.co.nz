@@ -18,7 +18,7 @@ export default React.createClass({
     }
     return <div className="mailing_list">
         <form
-          action="//atomic.us12.list-manage.com/subscribe/post?u=aa09d0e5a44742b7c1c444765&amp;id=a3e9d7942c"
+          action="//precinct35.us10.list-manage.com/subscribe/post?u=3380ffcd9a7ab08a1283bc5e6&amp;id=ab6da6b3a9"
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
@@ -26,13 +26,15 @@ export default React.createClass({
           target="_blank"
           onSubmit={this.handleSubmit}>
         	<h2>Join our mailing list</h2>
-        	<input type="email" placeholder="enter your email address" value="" name="EMAIL" className="mailing_list-email" id="mce-EMAIL" />
+          <input type="text" value="" placeholder="First name" name="FNAME" className="mailing_list-email" id="mce-FNAME" />
+          <input type="text" value="" placeholder="Last name" name="LNAME" className="mailing_list-email" id="mce-LNAME" />
+        	<input type="email" placeholder="email address" value="" name="EMAIL" className="mailing_list-email" id="mce-EMAIL" />
           <div style={spamStyle} aria-hidden="true">
-            <input type="text" name="b_aa09d0e5a44742b7c1c444765_a3e9d7942c" tabIndex="-1" value="" />
+            <input type="text" name="b_3380ffcd9a7ab08a1283bc5e6_ab6da6b3a9" tabIndex="-1" value="" />
           </div>
           <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="mailing_list-submit" />
       </form>
-    </div>;
+    </div>
   },
   handleSubmit(event){
     event.preventDefault();

@@ -8,6 +8,7 @@
 }
 
 .mailing_list-email{
+  @include smallSans;
   display: block;
   width: 100%;
   border: 0;
@@ -15,8 +16,8 @@
   margin-bottom: 20px;
   border-radius: 3px;
   text-align: center;
-  color: $blue;
-  @include smallSans;
+  color: $blue !important;
+
 }
 
 .mailing_list-submit{
