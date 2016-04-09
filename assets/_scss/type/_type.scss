@@ -9,11 +9,6 @@
   letter-spacing: -.04em;
 }
 
-@mixin smallSerif{
-  font-size: 18px !important;
-  font-family: 'Farnham-Medium', Serif !important;
-}
-
 @mixin smallCaps {
   @include smallSans;
   text-transform: uppercase;
