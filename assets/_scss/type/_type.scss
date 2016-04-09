@@ -5,7 +5,8 @@
 
 @mixin largeSans{
   font-family: $sans;
-  font-size: 64px;
+  font-size: 48px;
+  letter-spacing: -.04em;
 }
 
 @mixin smallSerif{

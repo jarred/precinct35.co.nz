@@ -18,6 +18,9 @@
 
 .index-online{
   background-color: $blue;
+  &:hover{
+    background-color: $grey;
+  }
 }
 .index-mailing_list{
   background-color: $grey;
@@ -145,4 +148,22 @@
   background-size: cover;
   opacity: .2;
   display: none;
+}
+
+.index-blog{
+  background-color: $blue;
+  text-decoration: none;
+  color: $grey;
+  // @include transition(background-color .1s);
+  &:hover{
+    background-color: $white;
+    color: $blue;
+  }
+}
+.index-blog-text{
+  @include largeSans;
+  text-align: center;
+  left: 0;
+  right: 0;
+
 }
