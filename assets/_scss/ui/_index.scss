@@ -17,9 +17,11 @@
 }
 
 .index-online{
-  background-color: $blue;
+  background-color: $grey;
+  color: $white;
   &:hover{
-    background-color: $grey;
+    color: $grey;
+    background-color: $white;
   }
 }
 .index-mailing_list{
@@ -132,7 +134,6 @@
   position: absolute;
   left: 0;
   right: 0;
-  color: $white;
   display: block;
   z-index: 99999;
 }

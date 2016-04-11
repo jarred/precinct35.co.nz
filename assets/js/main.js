@@ -6,5 +6,5 @@ import Collection from './components/collection.jsx';
 // import MailingList from './components/mailing-list.jsx'
 
 ReactDOM.render(<Instagram />, document.getElementById('instagram'));
-ReactDOM.render(<Collection />, document.getElementById('collection'));
+// ReactDOM.render(<Collection />, document.getElementById('collection'));
 // ReactDOM.render(<MailingList />, document.getElementById('mailing-list'));
