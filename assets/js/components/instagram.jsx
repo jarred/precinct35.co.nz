@@ -23,11 +23,13 @@ export default React.createClass({
     $.ajax({
       type: 'GET',
       dataType: 'jsonp',
-      url: "https://api.instagram.com/v1/users/19601174/media/recent/?access_token=20755768.06f8ba8.b52717186035436bac737b48cada2829&count=10",
+      // url: "https://api.instagram.com/v1/users/19601174/media/recent/?access_token=20755768.06f8ba8.b52717186035436bac737b48cada2829&count=10",
+      url: 'https://api.instagram.com/v1/users/19601174/media/recent/?access_token=2069170529.1677ed0.f0d8a2466e134663b062e8cbe1c881b6&count=20',
       success: this.dataLoaded
     });
   },
   dataLoaded(data){
+    console.log('dataLoaded', data);
     this.setState({
       photos: data.data,
       dataLoaded: false,
