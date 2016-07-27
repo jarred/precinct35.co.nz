@@ -40,4 +40,11 @@
   right: $margin;
   top: 5%;
   bottom: $margin;
+  @include breakpoint(mobile){
+    $margin: 20px;
+    left: $margin;
+    right: $margin;
+    top: $margin;
+    bottom: $margin;
+  }
 }
